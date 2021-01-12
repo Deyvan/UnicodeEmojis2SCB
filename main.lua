@@ -17,5 +17,6 @@ end
 
 
 -- tests
-print(convertAllUniEmojis2SCB("😎👨🏿‍🤝‍👨🏾"))
-print(convertAllUniEmojis2SCB("Minge with -> 🔇"))
+assert(convertAllUniEmojis2SCB("😎👨🏿‍🤝‍👨🏾") == ":sunglasses::two_men_holding_hands:")
+assert(convertAllUniEmojis2SCB("Minge with -> 🔇") == "Minge with -> :mute:")
+assert(convertAllUniEmojis2SCB("made with ❤️") == "made with :heart:")
